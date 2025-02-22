@@ -11,6 +11,27 @@ function setupGame() {
 }
 
 function generateWord() {
-    let randomWord = Math.floor(Math.random() * wordleWords.length);
-    wordleWord = wordleWords[randomWord];
+    let randomIndex = Math.floor(Math.random() * wordleWords.length);
+    wordleWord = wordleWords[randomIndex];
+}
+
+function checkWord(){
+    if (score==5) {
+        alert('You won! To play again, reload the page.')
+    }
+    else if (health < 0){
+        alert('You lost! To play again, reload the page.')
+    }
+
+    let guess = prompt('Enter a five-letter guess').toLowerCase;
+
+    if (guess == null) {
+        return;
+    }
+    else if (guess.trim() == "") {
+        return;
+    }
+    else if (guessLower.length == 5) {
+        let correctCount = 0;
+    }
 }
