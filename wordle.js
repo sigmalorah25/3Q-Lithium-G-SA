@@ -23,9 +23,6 @@ if (  (guess.trim() == "" ) || (guess.length !== 5)) {
 alert('Enter a 5-letter word.');
 return;
 }
-else {
-
-}
 
 var rowIndex = 5 - health;
 if (rowIndex < 0) return;
