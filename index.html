@@ -2,8 +2,15 @@
 <html>
 	<head>
 		<title>Wordle</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Garcia, Davis, Perez de Tagle">
+		<meta name="keywords" content="Summative Assesment">
+		<meta name="revised" content="03-05-25">
 		<style>
-			div, h1, span, p {
+			div,
+			h1,
+			span,
+			p {
 				font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 			}
 
@@ -12,9 +19,8 @@
 				flex-direction: column;
 				align-items: center;
 				background-image: url('background.png');
-                background-position: (-5px, 3px);
+				background-position: (-5px, 3px);
 			}
-			
 
 			h1 {
 				text-align: center;
@@ -73,9 +79,7 @@
 		</style>
 	</head>
 	<script src="wordle.js"></script>
-
 	<body onload="setupGame()">
-
 		<h1>Let's Play Wordle!</h1>
 		<div class="game-container">
 			<div class="grid">
